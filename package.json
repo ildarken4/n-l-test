@@ -47,6 +47,7 @@
 		"gulp.spritesmith": "6.12.1",
 		"imagemin-mozjpeg": "9.0.0",
 		"lint-staged": "11.1.1",
+		"locomotive-scroll": "4.1.4",
 		"merge-stream": "2.0.0",
 		"node-sass": "9.0.0",
 		"postcss": "8.3.6",
