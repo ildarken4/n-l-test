@@ -20,6 +20,8 @@ vars.clearText = (text) => {
 	return text.trim().replace(/\s+/g, ' ');
 };
 
+
+
 /**
 * Создать куки запись
 * @param {string} name Обязательное, название записи

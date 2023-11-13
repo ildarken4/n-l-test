@@ -1,0 +1,40 @@
+section.about#about(data-scroll-section data-scroll data-scroll-call="scrollEventAbout" 
+data-scroll-repeat data-scroll-position="start,start" data-scroll-offset="90%, 0")
+    .about__experience
+        h3
+            | Опыт работы
+
+        .experience
+            each exp in data.about.experience
+                include experience_card
+        
+    .about__pic#about__pic
+        +lazyPicture({
+                src: `${baseDir}images/main-picture.png`,
+                alt: 'Жонглёр',
+            }, 
+            {
+                srcset: `${baseDir}images/main-picture.png`,
+            },
+            {
+                srcset: `${baseDir}images/main-picture@2x.png`,
+                media: "(min-resolution: 144dpi)"
+            },
+            {
+                srcset: `${baseDir}images/main-picture-mob.png`,
+                media: "(max-width: 768px)"
+            }
+        )(data-scroll data-scroll-speed="-0.5")
+
+
+    .about__education
+        h3
+            | Образование
+
+        .education
+            each edu in data.about.education
+                include education_card
+
+    .red-line
+        img(src="images/line-bottom.svg" alt="").for-desktop
+        img(src="images/line-bottom-mob.svg" alt="").for-devices

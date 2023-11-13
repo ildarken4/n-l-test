@@ -1,0 +1,109 @@
+.progress{
+	position: fixed;
+	right: vw(50);
+	bottom: vw(50);
+	height: vw(48);
+	width: vw(48);
+	cursor: pointer;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	border-radius: 50px;
+	z-index: 2000;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);
+    transition: all 0.8s linear;
+
+    @include desktop-xl {
+        width: 48px;
+        height: 48px;
+
+        &__text {
+            width: 48px !important;
+            height: 48px !important;
+        }
+    }
+
+    @include devices {
+        width: 30px;
+        height: 30px;
+    
+        &__text {
+            width: 30px !important;
+            height: 30px !important;
+            font-size: 12px;
+        }
+
+        &__arrow {
+            height: 12px;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        height: vw(48);
+	    width: vw(48);
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            opacity: 1;
+            transition: opacity 0.7s ease;
+
+            &.active {
+                opacity: 0;
+            }
+        }
+    }
+
+    &__arrow {
+        opacity: 0;
+        transition: opacity 0.7s ease;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    &__circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &.active-progress {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    
+    svg path { 
+        fill: none; 
+    }
+
+    svg.progress__circle path {
+        stroke: #D2233C;
+        stroke-width: 2;
+        box-sizing:border-box;
+        -webkit-transition: all 200ms linear;
+        transition: all 200ms linear;
+    }
+
+    .circle-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        path{
+            stroke: #282A33;
+            stroke-width: 2;
+        }
+    }
+}
+
+

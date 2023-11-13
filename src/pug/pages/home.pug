@@ -2,9 +2,9 @@ main.home
 	+lazyPicture({
 		src: `${baseDir}images/mem.jpg`,
 		alt: 'Мемчик',
-	}).home__picture#hello
-
-	p.home__text#necessarily
+	}).home__picture
+	
+	p.home__text#about 
 		| Это стартовый шаблон для верстки!!!!!!!
 		br
 		br
@@ -20,7 +20,7 @@ main.home
 		| Не используемые части кода/компонентов можно просто отключить (удалять не рекомендуется)
 		br
 		br
-		| Не забывай читать #[a(href="https://github.com/ninelines-team/ninelines-docs" target="_blank") документацию]!
+		| Не забывай читать #[a(class="contact-" href="https://github.com/ninelines-team/ninelines-docs" target="_blank") документацию]!
 
 	//- picture.home__picture.home__picture--2#bye
 	+lazyPicture({
@@ -30,4 +30,4 @@ main.home
 		{
 			srcset: `${baseDir}images/mem-2.jpg`,
 		}
-	]).home__picture.home__picture--2#bye
+	]).home__picture.home__picture--2#skills

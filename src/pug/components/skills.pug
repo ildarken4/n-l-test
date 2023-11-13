@@ -1,0 +1,9 @@
+section.skills#skills
+    h3
+        | Навыки
+
+    .skills__list
+        each skill in data.skills
+            .skills__item
+                strong=skill.name
+                div=skill.details

@@ -1,0 +1,27 @@
+.skills {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        font-size: 14px;
+        flex: 0 0 25%;
+        margin-bottom: 20px;
+        padding-right: 8px;
+
+        @include tablet {
+            flex: 0 0 50%
+        }
+
+        @include mobile {
+            flex: 0 0 100%
+        }
+
+        strong {
+            display: block;
+            margin-bottom: 6px;
+        }
+    }
+}

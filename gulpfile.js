@@ -107,17 +107,18 @@ function svgoConfig(minify = argv.minifySvg) {
 
 gulp.task('copy', () => {
 	return gulp.src([
-		'src/resources/**/*.*',
-		'src/resources/**/.*',
-		'!src/resources/**/.keep',
+	  'src/resources//*.*',
+	  'src/resources//.*',
+	  '!src/resources/**/.keep'
 	], {
-		base: 'src/resources',
-		dot: true,
+	  base: 'src/resources',
+	  dot: true,
 	})
-		.pipe($.if(argv.cache, $.newer('build')))
-		.pipe($.if(argv.debug, $.debug()))
-		.pipe(gulp.dest('build'));
-});
+	  .pipe($.if(argv.cache, $.newer('build')))
+	  .pipe($.if(argv.debug, $.debug()))
+	  .pipe(gulp.dest('build'))
+	  .pipe(gulp.dest('build/js'));
+  });
 
 gulp.task('images', () => {
 	return gulp.src('src/images/**/*.*')

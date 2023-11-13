@@ -24,17 +24,13 @@
 		font-size: 20px;
 		line-height: 26px;
 
-		a {
+		a:not(.contact-link) {
 			text-decoration: underline;
+			color: $color-lightblue;
 
 			@include hover {
 				text-decoration: none;
 			}
-		}
-
-		code {
-			padding: 5px;
-			background-color: $color-gray;
 		}
 	}
 

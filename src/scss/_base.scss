@@ -30,6 +30,8 @@ body {
 	text-rendering: optimizeLegibility;
 	text-size-adjust: 100%;
 	-webkit-tap-highlight-color: transparent;
+	background-color: $color-white;
+	font-family: $font-family-SF;
 }
 
 main {
@@ -50,6 +52,11 @@ button {
 a {
 	text-decoration: none;
 	color: currentColor;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 50.4px;
 }
 
 svg {
@@ -139,6 +146,18 @@ iframe {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 100%;
+
+	@include desktop {
+		max-width: vw(1140)
+	}
+
+	@include desktop-xl {
+		max-width: 1140px
+	}
+
+	@include devices {
+        padding: 20px;
+    }
 }
 
 .site {

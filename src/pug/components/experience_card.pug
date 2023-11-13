@@ -1,0 +1,28 @@
+.experience__card
+    .experience__date=exp.date
+
+    .experience__position
+        strong=exp.position
+        .experience__skills
+            each skill, key in exp.skills
+                - var zIndex = exp.skills.length - key
+                img(src="images/"+skill alt="иконка" style="z-index:"+zIndex)
+
+    .experience__company
+        if exp.logo
+            if exp.logo_bg
+                .experience__logo(style="padding: 6px; background-color:"+exp.logo_bg)
+                    img(src=exp.logo width="100%" alt="логотип компании")
+            else
+                .experience__logo
+                    img(src=exp.logo width="100%" alt="логотип компании")
+        if exp.company
+            strong=exp.company
+        if exp.geo
+            .experience__geo=exp.geo
+    
+    .experience__description=exp.description
+
+    if exp.links
+        each exlink in exp.links
+            .experience__link(href=exlink.link target="_blank")=exlink.name

@@ -1,0 +1,30 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 2200;
+    background-color: $color-white;
+    height: 100vh;
+    width: 100vw;
+
+    &__animation {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        img {
+            position: absolute;
+            top: auto;
+            bottom: auto;
+            left: auto;
+            right: auto;
+            max-width: vw(600);
+            transform: translate(-50vw, 100vh);
+
+            @include mobile {
+                max-width: 70vw;
+            }
+        }
+    }
+}

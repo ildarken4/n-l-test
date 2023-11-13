@@ -1,0 +1,10 @@
+.education__card
+
+    .education__icons
+        each icon in edu.skill_icons
+            img(src="images/"+icon alt="")
+    .education__skill
+        strong=edu.skill
+
+    each info in edu.info
+        .education__info=info

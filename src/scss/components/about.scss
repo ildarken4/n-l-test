@@ -1,0 +1,55 @@
+.about {
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    line-height: 19.6px;
+    padding-top: 60px;
+    padding: 100px 0;
+
+    @include devices{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    &__experience {
+        flex: 0 0 50%;
+    }
+
+    &__pic,
+    &__education {
+        flex: 0 0 25%;
+    }
+
+    &__pic {
+        text-align: center;
+        
+        img {
+            @include devices {
+                height: 200px;
+            }
+        }
+    }
+
+        
+    h3 {
+        margin-bottom: 40px;
+
+        @include devices {
+            text-align: left;
+        }
+    }
+
+    .about__education {
+        text-align: center;
+
+    }
+
+    .red-line {
+        position: absolute;
+        bottom: -200px;
+        @include devices {
+            bottom: -60px;
+        }
+    }
+
+}

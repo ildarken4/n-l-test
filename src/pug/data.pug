@@ -2,20 +2,20 @@
 	const data = {
 		header: {
 			links: {
-				logo: 'https://ninelines.agency/',
+				logo: '#',
 			},
 			menu: [
 				{
-					url: '#hello',
-					name: 'Ну привет'
+					url: '#top',
+					name: 'Резюме'
 				},
 				{
-					url: '#necessarily',
-					name: 'Обязательно к прочтению'
+					url: '#about',
+					name: 'О себе'
 				},
 				{
-					url: '#bye',
-					name: 'И пока'
+					url: '#skills',
+					name: 'Навыки'
 				}
 			]
 		},
@@ -25,17 +25,185 @@
 			list: ['fb', 'tw', 'vk', 'ok'],
 		},
 
-		home: {
-			title: 'гид&nbsp;по <br><span class="for-desktop">бережному</span><span class="for-devices">общению</span>',
-			read: 'Читать',
+		about: {
+			experience: [
+				{
+					date: 'Июль 2019',
+					logo: '',
+					logo_bg: '',
+					position: 'Freelance Designer',
+					skills: [
+						'purple-icon.png',
+						'yellow-icon.png',
+						'blue-icon.png'
+					],
+					company: '',
+					geo: 'Netherlands, Worldwide',
+					description: 'Available for a project or job in UX/UI, Visual and Product design.',
+					links: [
+						{
+							name: 'Commercial tryouts',
+							link: '#'
+						},
+						{
+							name: 'Personal projects',
+							link: '#'
+						}
+					]
+				},
+				{
+					date: 'Январь 2017 - Сентябрь 2018',
+					logo: 'images/company-logo-1.png',
+					logo_bg: '',
+					position: 'Digital Designer',
+					skills: [
+						'blue-icon.png',
+						'pink-icon.png'
+					],
+					company: 'J Creative Solutions',
+					geo: 'Digital agency in Minsk, Belarus',
+					description: 'Created visuals for digital marketing channels such as social media, promo web and online ads. Developed visual language from scratch or following the branding guidelines. Designed presentations for clients and indoor purposes.',
+					links: [
+						{
+							name: 'Agency projects',
+							link: '#'
+						}
+					]
+				},
+				{
+					date: 'Март 2014 - Февраль 2017',
+					logo: 'images/company-logo-2.png',
+					logo_bg: '',
+					position: 'SEO Specialist → Lead SEO Specialist',
+					skills: [
+						'orange-icon.png',
+						'blue-icon.png'
+					],
+					company: 'OZ.by',
+					geo: 'Online bookstore in Minsk, Belarus',
+					description: 'Improved website performance and user experience of the biggest online bookstore OZ in Belarus, being a part of the marketing team,I interpreted Google Analytics data to IT, content and marketing colleagues. Advised on tech and content optimization strategy, automated processes, provided reports, increased organic traffic up to 150%.',
+					links: [
+						{
+							name: 'Annual company report 2016',
+							link: '#'
+						}
+					]
+				},
+				{
+					date: 'Август 2012 - Ноябрь 2013',
+					logo: 'images/company-logo-3.png',
+					logo_bg: '',
+					position: 'Content Specialist',
+					skills: [
+						'orange-icon.png'
+					],
+					company: '21vek.by',
+					geo: 'E-commerce store in Minsk, Belarus',
+					description: 'Added and modified the product information, prepared images and text for the website, developed categories filters, ensure all info is correct in the catalogue with the goal of improving online shopper experience.',
+					links: []
+				},
+				{
+					date: 'Август 2011 - Ноябрь 2014',
+					logo: 'images/company-logo-4.svg',
+					logo_bg: '#EF0005',
+					position: 'Software Support Engineer',
+					skills: [
+						'green-icon.png'
+					],
+					company: 'Integral',
+					geo: 'Microelectronics factory in Minsk, Belarus',
+					description: 'Supported retail accounting system LS Trade, troubleshoot technical problems.',
+					links: []
+				}
+			],
+			education: [
+				{
+					skill: 'Interface Design:\nWeb & Mobile',
+					info: [
+						'IT-Academy, 2020',
+					],
+					skill_icons: [
+						'purple-icon-bordered.png',
+						'yellow-icon-bordered.png',
+						'blue-icon-bordered.png'
+					]
+				},
+				{
+					skill: 'Fundamentals\nof Usability',
+					info: [
+						'Skillshare, Oct 2018',
+					],
+					skill_icons: [
+						'yellow-icon-bordered.png'
+					]
+				},
+				{
+					skill: 'CG Artist',
+					info: [
+						'Polygon CG School, May-Sep 2017'
+					],
+					skill_icons: [
+						'pink-icon-bordered.png'
+					]
+				},
+				{
+					skill: 'Graphic Design',
+					info: [
+						'Belarusian State Academy of Arts, 2015 - 2017',
+						'Postgraduate Diploma'
+					],
+					skill_icons: [
+						'blue-icon-bordered.png'
+					]
+				},
+				{
+					skill: 'SEO Specialist',
+					info: [
+						'ARTOX Media, Jun-Aug 2012'
+					],
+					skill_icons: [
+						'orange-icon-bordered.png'
+					]
+				},
+				{
+					skill: 'Information\nTechnology Software',
+					info: [
+						"Belarusian State University of Informatics and Radioelectronics, 2011 - 2015",
+						"Bachelor’s degree",
+						"Polotsk State Economic College, 2007 - 2011 Associate’s degree"
+					],
+					skill_icons: [
+						'green-icon-bordered.png'
+					]
+				},
+			]
 		},
+
+		skills: [
+				{
+					name: 'Adobe Creative Suite',
+					details: 'Photoshop, Illustrator, InDesign, XD, After Effects'
+				},
+				{
+					name: 'Prototyping',
+					details: 'Sketch, Figma, InVision, Marvel, Principle, Balsamiq'
+				},
+				{
+					name: 'Additional',
+					details: 'HTML, CSS, Google Analytics, Keynote, Miro'
+				},
+				{
+					name: 'Languages',
+					details: 'Native Russian, English B1'
+				}
+		],
 
 		modal: {
 			close: 'Закрыть',
 		},
 	};
 
-script.
-	window.data = {
-		home: !{JSON.stringify(data.home)},
-	};
+//- script.
+//- 	window.data = {
+//- 		home: !{JSON.stringify(data.home)},
+//- 	};

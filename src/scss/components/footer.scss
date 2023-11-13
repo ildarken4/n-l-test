@@ -1,17 +1,23 @@
 .footer {
 	display: flex;
-	margin-top: auto;
-	padding: 20px 30px;
-	width: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 100px 0 50px 0;
+	overflow: hidden;
 
-	&__developer {
-		margin-left: auto;
-		font-size: 12px;
-		line-height: 16px;
-	}
+	img {
+		max-width: vw(288);
 
-	&__copy {
-		font-size: 12px;
-		line-height: 16px;
+		@include desktop-xl {
+			max-width: 288px;
+		}
+
+		@include tablet {
+			max-width: 35vw;
+		}
+		
+		@include mobile {
+			max-width: 80vw;
+		}
 	}
 }

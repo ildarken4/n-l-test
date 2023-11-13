@@ -1,0 +1,61 @@
+.experience {
+
+    &__card {
+        margin-bottom: 60px;
+    }
+
+    &__date {
+        color: $color_gray;
+        margin-bottom: 8px;
+    }
+
+    &__position {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    &__skills {
+        margin-left: 8px;
+        display: flex;
+
+        img {
+            display: block;
+            height: 17px;
+            &:not(:first-child) {
+                margin-left: -7px;
+            }
+        }
+    }
+
+    &__company {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 8px;
+
+        strong {
+            margin-right: 8px;
+        }
+    }
+
+    &__logo {
+        margin-right: 8px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            width: 80%;
+        }
+    }
+
+    &__link {
+        margin-top: 4px;
+        color: $color-lightblue;
+        text-decoration: underline;
+    }
+
+}

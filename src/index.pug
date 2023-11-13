@@ -9,11 +9,18 @@ append vars
 block content
 	include pug/data
 
-	.site
-		include pug/components/header
+	.site#top
+		include pug/components/preloader
+		include pug/components/back-to-top
 
-		include pug/pages/home
+		.container
+			
+			include pug/components/header
+			
+			include pug/components/hero
+			
+			include pug/components/about
 
-		include pug/components/footer
+			include pug/components/skills
 
-	include pug/components/analytics
+			include pug/components/footer

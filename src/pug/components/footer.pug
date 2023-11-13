@@ -1,6 +1,9 @@
 footer.footer
-	.footer__copyright
-		span(data-actual-year)
-
-	.footer__developer
-		| &copy;&nbsp;Девять линий
+	+lazyPicture({
+                src: `${baseDir}images/heart-hand.png`,
+                alt: 'Жест сердце',
+            }, 
+            {
+                srcset: `${baseDir}images/heart-hand.png`,
+            }
+        ).footer__pic()
