@@ -26,7 +26,6 @@ lazyLoading.init();
 import header from './components/header';
 header.init();
 import './components/social';
-import './components/hero';
 import './components/about';
 import './components/footer';
 import './components/back-to-top';
